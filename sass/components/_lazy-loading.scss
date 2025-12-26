@@ -1,0 +1,33 @@
+img.lazy {
+  opacity: 0;
+  transition: opacity $transition-slow;
+  min-height: 50px;
+  background-color: $color-bg-light;
+  
+  &.loaded {
+    opacity: 1;
+    background-color: transparent;
+  }
+  
+  &.error {
+    opacity: 1;
+    filter: grayscale(100%);
+  }
+}
+
+.lazy-placeholder {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lazy-placeholder {
+    animation: none;
+    background: #f0f0f0;
+  }
+  
+  img.lazy {
+    transition: none;
+  }
+}

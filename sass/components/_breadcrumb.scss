@@ -1,0 +1,45 @@
+#breadcrumb_bar {
+  background: #DCDCDC91;
+  padding: $spacing-xxl 0 50px;
+  background-image: linear-gradient(#A5A4A491, $color-bg-white);
+}
+
+.breadcrumbs {
+  li:not(:last-child)::after {
+    content: '/';
+    color: $color-text-primary;
+  }
+  
+  a {
+    color: $color-text-secondary;
+    text-decoration: none !important;
+  }
+}
+
+.b_crumbs {
+  float: right;
+  margin-top: 25px;
+}
+
+.page_title {
+  float: left;
+  
+  h2 {
+    line-height: 1;
+    font-weight: $font-weight-semibold;
+    letter-spacing: 1px;
+    color: $color-text-primary;
+    font-size: 28px;
+    text-transform: uppercase;
+    @include font-primary;
+  }
+  
+  span {
+    display: block;
+    margin-top: 10px;
+    font-weight: $font-weight-light;
+    color: $color-text-muted;
+    font-size: $font-size-lg;
+    @include font-primary;
+  }
+}

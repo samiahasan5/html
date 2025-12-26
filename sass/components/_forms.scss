@@ -1,0 +1,133 @@
+.cust-radio-btn {
+  background-color: $color-bg-white;
+  height: 39px;
+  width: 270px;
+  border-radius: $border-radius-sm;
+  position: absolute;
+  box-shadow: $box-shadow-lg;
+  overflow: hidden;
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label:hover {
+    cursor: pointer;
+  }
+  
+  .label1, .label2 {
+    display: block;
+    height: 180px;
+    width: 130px;
+    background-size: 130px 180px;
+    background: linear-gradient(to bottom, white 0, white 90px, #2c2c2c 90px, #2c2c2c 180px);
+    position: absolute;
+    top: 0;
+    transition: $transition-slow;
+    color: #2c2c2c;
+  }
+  
+  .label2 {
+    right: 0;
+  }
+  
+  span {
+    display: flex;
+    height: 37px;
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: $font-weight-medium;
+    font-size: 17px;
+  }
+  
+  input:checked + label {
+    background-position: 0;
+    color: $color-text-white;
+    transition: 1s;
+    background: #6C757D;
+  }
+  
+  [type="checkbox"] + label[for],
+  [type="radio"] + label[for] {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.inputfile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.inputfilewrapper {
+  background-color: #0ac;
+  color: $color-text-white;
+  overflow: hidden;
+  cursor: pointer;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.inputfile-name {
+  cursor: pointer;
+}
+
+.footer-subscription {
+  margin-top: 45px;
+  
+  h3, h5 {
+    font-size: $font-size-lg;
+    color: #EEE;
+    margin-bottom: 10px;
+    @include font-primary;
+  }
+  
+  p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: $font-size-base;
+    margin-bottom: 20px;
+  }
+}
+
+.input-group-prepend {
+  text-align: center;
+  background: #14181F;
+  height: 40px;
+  padding: 10px 13px;
+  border-radius: $border-radius-lg 0 0 $border-radius-lg !important;
+  
+  .fa {
+    color: $color-text-light;
+  }
+}
+
+.e_box {
+  padding: 19.2px;
+  background: $color-bg-footer;
+  border: 1px solid $color-bg-footer;
+}
+
+.su_b {
+  border-radius: 0 $border-radius-lg $border-radius-lg 0;
+  padding: 11.6px;
+}
+
+[type="email"] {
+  background: $color-bg-footer !important;
+}

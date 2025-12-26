@@ -1,0 +1,101 @@
+.social {
+  &.like {
+    margin-top: 15px;
+  }
+}
+
+.social_like {
+  ul {
+    display: flex;
+    float: left;
+    margin-left: 0;
+  }
+  
+  a {
+    color: #AAA;
+  }
+  
+  ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    
+    &:hover a i {
+      &:nth-child(1) { transform: translateY(-30px); }
+      &:nth-child(2) { transform: translateY(-30px); color: $color-text-white; }
+      &:nth-child(3) { transform: translateY(-30px); }
+    }
+  }
+  
+  .fs_icon {
+    width: 41px;
+    height: 38px;
+    font-size: 22px;
+    background: $color-facebook;
+    margin-right: 2px;
+    padding: 5px 0;
+  }
+  
+  ul li a i {
+    color: $color-text-white;
+  }
+}
+
+.rss .fs_icon {
+  background: $color-rss;
+  
+  &:hover {
+    background: $color-rss;
+  }
+}
+
+.social_icon {
+  float: right;
+  
+  ul {
+    display: flex;
+    
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 5px;
+      
+      &:hover a i {
+        &:nth-child(1) { transform: translateY(-30px); }
+        &:nth-child(2) { transform: translateY(-30px); color: $color-text-white; }
+        &:nth-child(3) { transform: translateY(-30px); }
+      }
+      
+      &:hover:nth-child(1) a { background: $color-facebook; }
+      &:hover:nth-child(2) a { background: $color-twitter; }
+      &:hover:nth-child(3) a { background: $color-google; }
+      &:hover:nth-child(4) a { background: $color-pinterest; }
+      &:hover:nth-child(5) a { background: #86C9EF; }
+      &:hover:nth-child(6) a { background: $color-github; }
+      &:hover:nth-child(7) a { background: $color-instagram; }
+      &:hover:nth-child(8) a { background: $color-linkedin; }
+    }
+  }
+}
+
+.fs_icon {
+  width: 33px;
+  height: 35px;
+  text-align: center;
+  font-size: $font-size-md;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: bottom;
+  background: $color-bg-footer;
+  transition: $transition-normal;
+  border-radius: $border-radius-sm;
+  padding: 3px 2px;
+  overflow: hidden;
+}
+
+ul li a i {
+  display: block;
+  width: 100%;
+  color: $color-text-muted;
+  transition: $transition-normal;
+}

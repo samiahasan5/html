@@ -1,0 +1,72 @@
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $spacing-md;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: $border-radius-base;
+  
+  img {
+    width: 100%;
+    height: auto;
+    transition: transform $transition-normal;
+  }
+  
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  @include flex-center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity $transition-normal;
+  
+  .portfolio-item:hover & {
+    opacity: 1;
+  }
+}
+
+.portfolio-title {
+  color: $color-text-white;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  margin-bottom: $spacing-xs;
+}
+
+.portfolio-category {
+  color: $color-secondary;
+  font-size: $font-size-sm;
+}
+
+.portfolio-filter {
+  text-align: center;
+  margin-bottom: $spacing-lg;
+  
+  button {
+    background: transparent;
+    border: 1px solid $color-border;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all $transition-normal;
+    @include font-primary;
+    
+    &:hover, &.active {
+      background: $color-secondary;
+      border-color: $color-secondary;
+      color: $color-text-white;
+    }
+  }
+}

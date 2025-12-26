@@ -1,0 +1,29 @@
+.single-coutnerup {
+  text-align: center;
+  @include font-primary;
+  
+  .count-num {
+    font-size: $font-size-xxxl;
+    line-height: 60px;
+    font-weight: $font-weight-bold;
+    color: $color-secondary;
+    display: block;
+  }
+  
+  .clients {
+    color: #2CAACA;
+  }
+  
+  .title, p.title {
+    font-size: $font-size-sm;
+    @include font-primary;
+    letter-spacing: 1px;
+    color: #EEE;
+    opacity: 0.9;
+    margin: 0;
+  }
+  
+  .code { color: #e74c3c; }
+  .bri { color: #16A085; }
+  .cup { color: #9B59B6; }
+}

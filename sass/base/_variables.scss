@@ -1,0 +1,107 @@
+$color-primary: #FE0000;
+$color-primary-hover: #CC0000;
+$color-secondary: #1ABC9C;
+$color-secondary-hover: #16A085;
+$color-accent: #FF6E63;
+$color-accent-hover: #FF5F62;
+
+$color-link: #0052CC;
+$color-link-hover: #003D99;
+$color-success: #1ABC9C;
+$color-error: #cc4b37;
+
+$color-text-primary: #333;
+$color-text-secondary: #555;
+$color-text-muted: #777;
+$color-text-light: #999;
+$color-text-white: #fff;
+
+$color-bg-header: #424357;
+$color-bg-light: #F5F5F5;
+$color-bg-gray: #F9F9F9;
+$color-bg-white: #FFFFFF;
+$color-bg-dark: #191E25;
+$color-bg-footer: #181E24;
+
+$color-border: #DEDEDE;
+$color-border-dark: #333;
+$color-border-light: #e0e0e0;
+$color-border-lighter: #f0f0f0;
+
+$color-facebook: #3b5998;
+$color-twitter: #55acee;
+$color-google: #dc4e41;
+$color-pinterest: #cb2027;
+$color-linkedin: #007bb6;
+$color-github: #171515;
+$color-instagram: #7B0099;
+$color-rss: #EE802F;
+
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 48px;
+$spacing-xxl: 80px;
+
+$font-family-primary: 'Ubuntu', 'Montserrat', 'Lato', 'Open Sans', 'PT Serif', 'Roboto', sans-serif;
+$font-family-icon: 'feather';
+$font-family-fontawesome: 'FontAwesome';
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$font-size-xs: 12px;
+$font-size-sm: 13px;
+$font-size-base: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 22px;
+$font-size-xxl: 24px;
+$font-size-xxxl: 30px;
+$font-size-display: 64px;
+
+$line-height-tight: 1.3;
+$line-height-base: 1.5;
+$line-height-relaxed: 1.8;
+
+$transition-fast: 0.2s ease-in-out;
+$transition-normal: 0.3s ease-in-out;
+$transition-slow: 0.5s ease-in-out;
+
+$breakpoint-small: 0;
+$breakpoint-medium: 640px;
+$breakpoint-large: 1024px;
+$breakpoint-xlarge: 1200px;
+$breakpoint-xxlarge: 1440px;
+
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+$z-index-preloader: 99999;
+$z-index-mobile-menu: 9999;
+$z-index-overlay: 9998;
+
+$border-radius-sm: 3px;
+$border-radius-base: 4px;
+$border-radius-lg: 5px;
+$border-radius-pill: 50px;
+$border-radius-circle: 50%;
+
+$box-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+$box-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+$box-shadow-lg: 0 0 30px 0px #d1d1d1;
+$box-shadow-menu: 2px 0 10px rgba(0, 0, 0, 0.2);
+
+$header-max-height: 115px;
+$mobile-menu-width: 280px;
+$footer-padding-top: 60px;
+$footer-padding-bottom: 20px;

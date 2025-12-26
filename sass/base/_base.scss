@@ -1,0 +1,79 @@
+:root {
+  --color-primary: #{$color-primary};
+  --color-primary-hover: #{$color-primary-hover};
+  --color-secondary: #{$color-secondary};
+  --color-secondary-hover: #{$color-secondary-hover};
+  --color-accent: #{$color-accent};
+  --color-accent-hover: #{$color-accent-hover};
+  --color-link: #{$color-link};
+  --color-link-hover: #{$color-link-hover};
+  --color-success: #{$color-success};
+  --color-error: #{$color-error};
+  --color-text-primary: #{$color-text-primary};
+  --color-text-secondary: #{$color-text-secondary};
+  --color-text-muted: #{$color-text-muted};
+  --color-text-light: #{$color-text-light};
+  --color-bg-header: #{$color-bg-header};
+  --color-bg-light: #{$color-bg-light};
+  --color-bg-gray: #{$color-bg-gray};
+  --color-bg-white: #{$color-bg-white};
+  --color-border: #{$color-border};
+  --color-border-dark: #{$color-border-dark};
+  --spacing-xs: #{$spacing-xs};
+  --spacing-sm: #{$spacing-sm};
+  --spacing-md: #{$spacing-md};
+  --spacing-lg: #{$spacing-lg};
+  --spacing-xl: #{$spacing-xl};
+  --font-family-primary: #{$font-family-primary};
+  --font-weight-light: #{$font-weight-light};
+  --font-weight-normal: #{$font-weight-normal};
+  --font-weight-bold: #{$font-weight-bold};
+  --transition-fast: #{$transition-fast};
+  --transition-normal: #{$transition-normal};
+  --transition-slow: #{$transition-slow};
+}
+
+body {
+  @include font-primary;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  @include font-primary;
+}
+
+*:focus {
+  outline: 2px solid $color-link;
+  outline-offset: 2px;
+}
+
+a:focus, button:focus {
+  outline: 2px solid $color-primary;
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid $color-primary;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #CC0000;
+    --color-link: #0000EE;
+    --color-text-primary: #000;
+    --color-border: #000;
+  }
+}

@@ -1,0 +1,197 @@
+.top-bar {
+  border-top: 1px solid $color-border;
+  background: $color-bg-white;
+  padding: 0;
+  
+  &, ul {
+    background: $color-bg-white;
+    padding: 0;
+  }
+}
+
+.top-bar-left {
+  ul li a {
+    color: $color-text-primary;
+    font-size: $font-size-sm;
+    letter-spacing: 1px;
+    line-height: 33px;
+    @include font-primary;
+    text-transform: uppercase;
+    font-weight: $font-weight-normal;
+    
+    &:focus {
+      color: $color-text-secondary;
+    }
+  }
+  
+  ul li {
+    padding: 0;
+  }
+  
+  ul .is-submenu-item {
+    padding: 0;
+  }
+}
+
+.dropdown.menu, .menu[data-responsive-menu] {
+  > li > a {
+    padding: 0.7rem 1.5rem;
+  }
+  
+  > li.is-active > a {
+    color: $color-link;
+  }
+  
+  > li.js-dropdown-active > a {
+    color: $color-bg-white;
+  }
+}
+
+.dropdown .is-dropdown-submenu a,
+.menu[data-responsive-menu] .is-dropdown-submenu a,
+.menu[data-responsive-menu] .nested.menu a {
+  color: $color-text-primary;
+  border: none;
+  padding: 6px 12px !important;
+  margin: 0 !important;
+  background: $color-bg-white;
+  letter-spacing: 0;
+  transition: $transition-fast;
+  font-size: $font-size-sm;
+  line-height: $line-height-tight;
+  white-space: nowrap;
+}
+
+.dropdown.menu .is-dropdown-submenu,
+.menu[data-responsive-menu] .is-dropdown-submenu,
+.menu[data-responsive-menu] .nested.menu {
+  z-index: $z-index-dropdown;
+  border: 1px solid $color-border;
+  box-shadow: $box-shadow-sm;
+  min-width: auto;
+  width: max-content;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown.menu .is-dropdown-submenu li,
+.menu[data-responsive-menu] .is-dropdown-submenu li,
+.menu[data-responsive-menu] .nested.menu li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.dropdown .is-dropdown-submenu a:hover,
+.menu[data-responsive-menu] .is-dropdown-submenu a:hover,
+.menu[data-responsive-menu] .nested.menu a:hover {
+  background: $color-link;
+  color: $color-bg-white;
+  transition-delay: 0s;
+}
+
+.dropdown.menu .nested.is-dropdown-submenu,
+.menu[data-responsive-menu] .nested.is-dropdown-submenu {
+  border: none;
+}
+
+.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after,
+.menu[data-responsive-menu].medium-horizontal > li.is-dropdown-submenu-parent > a::after {
+  display: block;
+  border: inset 0;
+  content: "\f107";
+  font-family: $font-family-fontawesome;
+  font-size: $font-size-xs;
+  right: 17px;
+  left: auto;
+  margin-top: -16px;
+}
+
+@include tablet-up {
+  .menu[data-responsive-menu] > li.is-dropdown-submenu-parent > a::after {
+    display: block;
+    border: inset 0;
+    content: "\f107";
+    font-family: $font-family-fontawesome;
+    font-size: $font-size-xs;
+    right: 5px;
+    left: auto;
+    margin-top: -16px;
+    position: absolute;
+  }
+  
+  .menu[data-responsive-menu] .is-dropdown-submenu,
+  .menu[data-responsive-menu] .nested.menu {
+    min-width: auto;
+    width: max-content;
+    background: $color-bg-white;
+    padding: 0;
+  }
+  
+  .menu[data-responsive-menu] > li > .nested.menu,
+  .menu[data-responsive-menu] > li > ul[data-submenu] {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    min-width: auto;
+    width: max-content;
+    background: $color-bg-white;
+    z-index: $z-index-dropdown;
+    border: 1px solid $color-border;
+    box-shadow: $box-shadow-md;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu[data-responsive-menu] > li:hover > .nested.menu,
+  .menu[data-responsive-menu] > li:hover > ul[data-submenu],
+  .menu[data-responsive-menu] > li:focus-within > .nested.menu,
+  .menu[data-responsive-menu] > li:focus-within > ul[data-submenu] {
+    display: block;
+  }
+  
+  .menu[data-responsive-menu] > li > .nested.menu > li,
+  .menu[data-responsive-menu] > li > ul[data-submenu] > li {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .menu[data-responsive-menu] > li > .nested.menu > li > a,
+  .menu[data-responsive-menu] > li > ul[data-submenu] > li > a {
+    display: block;
+    padding: 6px 12px !important;
+    margin: 0 !important;
+    color: $color-text-primary;
+    white-space: nowrap;
+    font-size: $font-size-sm;
+    line-height: $line-height-tight;
+    letter-spacing: 0;
+  }
+  
+  .menu[data-responsive-menu] > li > .nested.menu > li > a:hover,
+  .menu[data-responsive-menu] > li > ul[data-submenu] > li > a:hover {
+    background: $color-link;
+    color: $color-text-white;
+  }
+  
+  .menu[data-responsive-menu] > li {
+    position: relative;
+  }
+}
+
+.title-bar {
+  background: $color-bg-white;
+}
+
+.menu-header {
+  background: $color-bg-white;
+  min-height: 108px;
+  padding-right: 25px;
+}
+
+.menu-logo {
+  padding: 30px 0 0 23px;
+  border-right: 1px solid $color-border;
+}

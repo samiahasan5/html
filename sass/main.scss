@@ -1,0 +1,28 @@
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/animations';
+@import 'base/base';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/preloader';
+@import 'components/lazy-loading';
+@import 'components/buttons';
+@import 'components/navigation';
+@import 'components/mobile-menu';
+@import 'components/breadcrumb';
+@import 'components/social-buttons';
+@import 'components/testimonials';
+@import 'components/counter';
+@import 'components/forms';
+
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/services';
+@import 'pages/portfolio';
+@import 'pages/pricing';
+@import 'pages/contact';
+
+@import 'utilities/utilities';

@@ -1,0 +1,175 @@
+#slider-top {
+  text-align: center;
+  padding: 50px 0;
+  
+  h2 {
+    font-size: $font-size-xxxl;
+    font-weight: $font-weight-bold;
+    color: $color-text-primary;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include font-primary;
+  }
+  
+  p {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-light;
+    color: $color-text-secondary;
+    max-width: 700px;
+    line-height: $line-height-base;
+    margin: auto;
+    @include font-primary;
+  }
+}
+
+#about-slider {
+  margin-bottom: 50px;
+}
+
+#about-counter {
+  .fa {
+    font-size: 56px;
+  }
+  
+  .title {
+    color: $color-text-primary;
+    text-transform: uppercase;
+  }
+  
+  .single-coutnerup .count-num {
+    font-size: 50px;
+  }
+}
+
+#about-middle-content {
+  margin: 50px 0;
+  
+  h3 {
+    font-size: $font-size-xxl;
+    font-weight: $font-weight-bold;
+    color: #444;
+    @include font-primary;
+    
+    span {
+      color: $color-secondary;
+    }
+  }
+  
+  span {
+    color: #888;
+  }
+  
+  button {
+    background: $color-secondary;
+    border-radius: $border-radius-sm;
+    color: $color-text-white;
+    font-weight: $font-weight-bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    
+    &:hover {
+      background: #444;
+    }
+  }
+  
+  .toppad {
+    padding-top: 9px;
+  }
+}
+
+.mi_c {
+  background: $color-bg-light;
+  padding: 30px 10px;
+}
+
+#main-content {
+  text-align: center;
+  
+  h3 {
+    font-weight: $font-weight-bold;
+    color: $color-text-primary;
+  }
+  
+  span {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-light;
+    color: $color-text-secondary;
+    max-width: 700px;
+    line-height: $line-height-base;
+    margin: auto;
+    @include font-primary;
+  }
+}
+
+.m_c {
+  @include heading-underline-center;
+}
+
+#about_team {
+  margin-top: 50px;
+  
+  .social_icon {
+    float: left;
+    margin-top: 25px;
+    
+    ul {
+      margin-left: 0;
+    }
+  }
+  
+  .fs_icon {
+    background: #ccc;
+    border-radius: $border-radius-pill;
+  }
+  
+  .bot_mar {
+    margin-bottom: 50px;
+  }
+}
+
+.team {
+  &.team-list .team-image {
+    float: left;
+    width: 250px;
+    margin-right: 30px;
+  }
+}
+
+.team-content {
+  margin-top: 15px;
+  
+  p {
+    margin-top: 15px;
+    color: $color-text-muted;
+    line-height: $line-height-relaxed;
+    font-size: 0.875rem;
+    @include font-primary;
+  }
+}
+
+.team-title {
+  h4 {
+    color: #444;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: $font-weight-bold;
+  }
+  
+  span {
+    display: block;
+    color: $color-secondary;
+    font-weight: $font-weight-normal;
+    @include font-primary;
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .team.team-list .team-image {
+    float: left;
+    width: 100%;
+    margin-right: 30px;
+  }
+}

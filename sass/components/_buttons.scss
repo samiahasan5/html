@@ -1,0 +1,26 @@
+.button, button {
+  @include font-primary;
+}
+
+header .button {
+  @include button-primary;
+}
+
+.btn-primary {
+  @include button-primary;
+}
+
+.btn-secondary {
+  @include button-secondary;
+}
+
+.btn-dark {
+  @include button-base;
+  background: $color-text-primary;
+  color: $color-text-white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  
+  &:hover {
+    background: $color-secondary;
+  }
+}

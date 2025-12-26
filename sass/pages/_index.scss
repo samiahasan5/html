@@ -1,0 +1,210 @@
+.under_menu {
+  background: #DCDCDC91;
+  padding: $spacing-xxl 0 10px;
+  background-image: linear-gradient(#A5A4A491, $color-bg-white);
+}
+
+.orbit-caption {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  margin-bottom: 0;
+  padding: 1rem;
+  background-color: transparent;
+  color: #fefefe;
+  top: 22%;
+  text-align: center;
+  margin-left: 14%;
+}
+
+.orbit-container {
+  max-height: 450px;
+}
+
+.orbit-image {
+  margin-top: -150px;
+}
+
+figcaption {
+  h2 {
+    text-transform: uppercase;
+    font-size: $font-size-display;
+    font-weight: $font-weight-bold !important;
+    @include font-primary;
+  }
+  
+  p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: $font-size-xxl;
+    @include font-primary;
+    font-weight: $font-weight-light;
+  }
+}
+
+#index_content {
+  padding: 40px 0;
+  background: $color-bg-light;
+  margin-bottom: 60px;
+  
+  h3 {
+    font-size: $font-size-xxl;
+    font-weight: $font-weight-bold;
+    color: #444;
+    @include font-primary;
+    
+    span {
+      color: $color-secondary;
+    }
+  }
+  
+  span {
+    color: #888;
+  }
+  
+  button {
+    background: #444;
+    border-radius: $border-radius-sm;
+    color: $color-text-white;
+    font-weight: $font-weight-bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    
+    &:hover {
+      background: $color-secondary;
+    }
+  }
+  
+  .toppad {
+    padding-top: 9px;
+  }
+}
+
+#rapid_options {
+  margin: 50px auto;
+  
+  .fa {
+    font-size: 45px;
+    cursor: pointer;
+  }
+  
+  .title, h3.title {
+    color: $color-text-primary;
+    text-transform: uppercase;
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    margin-top: 30px;
+    @include font-primary;
+  }
+  
+  span {
+    color: #444;
+    font-weight: $font-weight-light;
+  }
+}
+
+.account {
+  background: $color-secondary;
+  padding: 28px;
+  text-align: center;
+  transition: $transition-normal;
+  
+  &:hover {
+    background: #444;
+    cursor: pointer;
+  }
+  
+  span, p {
+    font-size: $font-size-xxxl;
+    color: $color-text-white;
+    font-weight: $font-weight-light;
+    @include font-primary;
+  }
+  
+  span a, a {
+    font-size: $font-size-xxxl;
+    color: $color-text-white;
+    font-weight: $font-weight-bold;
+    margin-right: 5px;
+    text-decoration: underline;
+  }
+}
+
+#ecommerce-insight {
+  padding: 100px 0;
+  
+  h2, h3 {
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xxxl;
+    @include font-primary;
+  }
+  
+  p {
+    color: $color-text-secondary;
+    margin-bottom: 30px;
+  }
+  
+  .ecom_list span {
+    display: block;
+    margin-top: 10px;
+    font-weight: $font-weight-light;
+    font-size: 15px;
+    color: $color-text-secondary;
+    line-height: $line-height-relaxed;
+    margin-bottom: 40px;
+  }
+  
+  .heading-block {
+    @include heading-underline;
+  }
+  
+  .ecom_v {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2) url("images/index/grid.png") repeat;
+    
+    .v_image {
+      width: 100%;
+    }
+  }
+  
+  .i-overlay {
+    img, i {
+      display: block;
+      position: absolute;
+      margin: -185px 0 0 216px;
+      height: 48px !important;
+      font-size: 48px;
+      line-height: 1;
+      color: #E5E5E5;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.ecom_list {
+  ul {
+    margin-left: 0;
+    
+    li {
+      list-style: none;
+      font-size: 15px;
+      color: $color-text-secondary;
+      line-height: $line-height-relaxed;
+    }
+  }
+}
+
+#shortcode {
+  padding: 50px 0;
+  background: $color-bg-gray;
+  
+  h3 {
+    font-size: 15px;
+    font-weight: $font-weight-bold;
+    line-height: 26px;
+    color: $color-text-primary;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @include font-primary;
+  }
+}

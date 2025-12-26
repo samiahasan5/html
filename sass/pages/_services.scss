@@ -1,0 +1,148 @@
+#social_media_boxes {
+  margin-top: 100px;
+  @include font-primary;
+  
+  h3 {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    color: $color-text-primary;
+    
+    span.subtitle {
+      display: block;
+      margin-top: 5px;
+      color: #444;
+      font-weight: $font-weight-light;
+      text-transform: none;
+      @include font-primary;
+    }
+  }
+  
+  p {
+    margin-top: 17px;
+    line-height: $line-height-relaxed;
+    color: #666;
+  }
+}
+
+#configure {
+  background: $color-bg-gray;
+  text-align: center;
+  padding: 50px 0;
+  
+  h3 {
+    text-transform: uppercase;
+  }
+  
+  img {
+    margin-bottom: 40px;
+  }
+  
+  .heading-block {
+    span {
+      display: block;
+      font-weight: $font-weight-light;
+      color: $color-text-secondary;
+      margin: 10px auto;
+      max-width: 600px;
+      font-size: $font-size-xl;
+      @include font-primary;
+    }
+    
+    @include heading-underline-center;
+  }
+}
+
+.c-des {
+  padding: 0 0 0 100px;
+}
+
+.config-box {
+  a {
+    float: left;
+    font-size: 48px;
+    color: $color-secondary;
+    margin-top: -15px;
+    margin-left: 20px;
+  }
+  
+  h3 {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: $color-text-primary;
+    text-align: left;
+  }
+  
+  p {
+    margin: 8px 0 0 0;
+    color: #666;
+    font-size: $font-size-base;
+    text-align: left;
+    line-height: 2;
+  }
+}
+
+#business-insight {
+  padding: 60px 0;
+  
+  h3 {
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    font-size: 26px;
+  }
+  
+  p {
+    color: $color-text-secondary;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: $line-height-relaxed;
+  }
+  
+  .heading-block {
+    span {
+      display: block;
+      margin-top: 10px;
+      font-weight: $font-weight-light;
+      font-size: 20px;
+      color: $color-text-muted;
+      @include font-primary;
+    }
+    
+    @include heading-underline;
+  }
+}
+
+#statistics {
+  padding: 60px 0;
+  
+  h3 {
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    font-size: 26px;
+  }
+  
+  p {
+    color: $color-text-secondary;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: $line-height-relaxed;
+  }
+  
+  .heading-block {
+    span {
+      display: block;
+      margin-top: 10px;
+      font-weight: $font-weight-light;
+      font-size: 20px;
+      color: $color-text-muted;
+      @include font-primary;
+    }
+    
+    @include heading-underline;
+  }
+}

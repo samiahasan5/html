@@ -1,0 +1,74 @@
+#about-testimonials {
+  background: #F9F9F9;
+  padding: 70px 0;
+}
+
+.test-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.test-heading span {
+  color: #1ABC9C;
+}
+
+.testimonial-slider {
+  padding: 50px 20px 0px;
+  text-align: center;
+}
+
+.testimonial .description {
+  color: #555;
+  line-height: 1.5;
+  text-indent: 30px;
+  position: relative;
+  width: 800px;
+  margin: 10px auto;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.testimonial .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #646262;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 15px 0 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+.testimonial .post {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  height: 85px;
+  width: 80px;
+}
+
+.owl-buttons {
+  display: none;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  border: 4px solid dodgerblue;
+  transition: all 0.3s ease-in-out 0s;
+  margin: 5px 5px;
+}
+
+@media only screen and (max-width: 479px) {
+  .owl-buttons {
+    bottom: 30%;
+  }
+}
